@@ -6,17 +6,12 @@ body {
   margin: 0;
 }
 
-a,
-a:visited {
+a {
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-}
-
-a:hover {
-  color: #6070ff;
 }
 
 header {
@@ -25,7 +20,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-
   background-color: #fff;
 }
 
@@ -33,6 +27,10 @@ header a {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  color: #6070ff;
+}
+
+a:hover {
   color: #6070ff;
 }
 
