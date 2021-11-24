@@ -6,14 +6,34 @@ body {
   margin: 0;
 }
 
-nav {
+a,
+a:visited {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+a:hover {
+  color: #6070ff;
+}
+
+header {
   height: 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-  color: #6070ff;
+
   background-color: #fff;
+}
+
+header a {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #6070ff;
 }
 
 .menu {
@@ -35,7 +55,7 @@ nav {
 }
 
 .hero {
-  padding: 140px 24px;
+  padding: 90px 24px;
   background-image: url("./assets/header-shapes-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -55,15 +75,12 @@ p {
   text-align: justify;
 }
 
-a,
-a:visited {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
+.socials {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
 }
 
-a:hover {
-  color: #6070ff;
+.socials li:not(:last-child) {
+  margin-right: 20px;
 }
