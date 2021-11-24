@@ -2,8 +2,10 @@
 
 # My Microverse Portfolio
 
-this is a website to showcase all my projects, to show what I'm capable of as a web developer.
-it is not done yet, so fare I only managed to add a nav bar for the mobile version.
+> this is a website to showcase all my projects, to show what I'm capable of as a web developer.
+> it is not done yet, so fare I only managed to add a nav bar for the mobile version and a hero section.
+
+![screenshot](./assets/screenshot.png)
 
 ## Built With
 
