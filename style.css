@@ -68,11 +68,11 @@ h1 {
   color: #172b4d;
 }
 
-.hero p {
+.hero p,
+.info p {
   color: #344563;
   font-size: 16px;
   line-height: 24px;
-  text-align: justify;
 }
 
 .socials {
@@ -148,7 +148,7 @@ h1 {
   margin-right: 8px;
 }
 
-.works button {
+button {
   padding: 12px;
   margin: 0;
   background-color: transparent;
@@ -156,4 +156,43 @@ h1 {
   color: #6070ff;
   border: 1px #6070ff solid;
   cursor: pointer;
+}
+
+.about {
+  padding: 100px 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.drop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.list {
+  padding: 12px;
+}
+
+.list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill {
+  padding: 9px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.skill p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  margin-left: 16px;
 }
