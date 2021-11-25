@@ -79,6 +79,9 @@ h1 {
   display: flex;
   padding: 0;
   list-style-type: none;
+}
+
+.socials img {
   margin-right: 20px;
 }
 
