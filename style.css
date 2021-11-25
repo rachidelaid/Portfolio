@@ -79,9 +79,6 @@ h1 {
   display: flex;
   padding: 0;
   list-style-type: none;
-}
-
-.socials li:not(:last-child) {
   margin-right: 20px;
 }
 
@@ -124,14 +121,6 @@ h1 {
   color: #7a869a;
 }
 
-.subTitle li:first-child {
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #344563;
-  list-style-type: none;
-}
-
 .langauges {
   padding: 0;
   margin: 12px 0 24px 0;
@@ -146,6 +135,14 @@ h1 {
 .langauges li {
   padding: 4px 12px;
   margin-right: 8px;
+}
+
+.subTitle li:first-child {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  list-style-type: none;
 }
 
 button {
@@ -171,7 +168,7 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
+  color: #000;
 }
 
 .list {
