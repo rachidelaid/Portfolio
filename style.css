@@ -61,6 +61,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #fff;
+  border-radius: 0 0 0 60px;
 }
 
 h1 {
