@@ -126,8 +126,19 @@ h1 {
   margin: 20px 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   color: #7a869a;
+}
+
+.subTitle li {
+  margin-right: 32px;
+}
+
+.subTitle li:first-child {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  list-style-type: none;
 }
 
 .langauges {
@@ -147,14 +158,6 @@ h1 {
   margin-right: 8px;
   background-color: #dfe1e6;
   border-radius: 8px;
-}
-
-.subTitle li:first-child {
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #344563;
-  list-style-type: none;
 }
 
 button {
