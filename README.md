@@ -3,7 +3,6 @@
 # My Microverse Portfolio
 
 > this is a website to showcase all my projects, to show what I'm capable of as a web developer.
-> it almost done, I just need to add the contact section.
 
 ![screenshot](./assets/screenshot.png)
 
