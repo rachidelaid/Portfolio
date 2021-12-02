@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -21,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  padding: 24px;
   background-color: #fff;
 }
 
@@ -351,8 +354,14 @@ textarea::placeholder {
   }
 
   .hero {
-    padding: 160px 260px;
     background-image: url('./assets/Header-bg.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero > div {
+    width: 600px;
   }
 
   .works {
