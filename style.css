@@ -380,7 +380,7 @@ textarea::placeholder {
     padding: 142px;
     grid-template-columns: 40% 60%;
     background-color: #fff;
-    grid-template: 24px;
+    gap: 24px;
   }
 
   .list ul {
