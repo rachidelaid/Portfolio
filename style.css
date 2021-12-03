@@ -114,6 +114,11 @@ h1 {
 .work-card img {
   width: 100%;
   border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.work-card img:hover {
+  transform: scale(0.95);
 }
 
 .details {
