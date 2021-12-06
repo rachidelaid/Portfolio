@@ -11,7 +11,7 @@
 - HTML
 - CSS
 
-## Live Demo
+## Live Link
 
 [Live Link](https://rachidelaid.github.io/Portfolio/)
 
