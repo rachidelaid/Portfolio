@@ -90,10 +90,12 @@ a:hover {
   transform: rotate(-43deg);
   background-color: #fff;
 }
+
 .menu.active span:nth-child(2) {
   opacity: 0;
   background-color: #fff;
 }
+
 .menu.active span:last-child {
   transform: rotate(43deg);
   background-color: #fff;
@@ -118,7 +120,7 @@ a:hover {
   gap: 40px;
 }
 
-.mobile-menu a {
+.menu-link {
   color: #fff;
   font-weight: 600;
   font-size: 32px;

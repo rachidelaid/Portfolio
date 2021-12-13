@@ -11,7 +11,7 @@ menu.addEventListener('click', () => {
   }
 });
 
-links.forEach(a => {
+links.forEach((a) => {
   a.addEventListener('click', () => {
     menu.classList.remove('active');
     document.querySelector('.mobile-menu').style.display = 'none';
