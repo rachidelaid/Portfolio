@@ -12,7 +12,9 @@ menu.addEventListener('click', () => {
 });
 
 links.forEach((a) => {
-  a.addEventListener('click', () => {
+  a.addEventListener('click', (e) => {
+    e.preventDefault();
+
     menu.classList.remove('active');
     document.querySelector('.mobile-menu').style.display = 'none';
   });
