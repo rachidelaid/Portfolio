@@ -74,21 +74,20 @@ const projects = [
   },
 ];
 
-for (let i = 0; i < projects.length; i++) {
-  const { title, image, imageAlt, details, description, langs, id } =
-    projects[i];
+for (let i = 0; i < projects.length; i += 1) {
+  const project = projects[i];
 
   work.innerHTML += `
-    <div class="work-card" id="project-${id}">
-      <img src="${image}" alt="${imageAlt}" />
+    <div class="work-card" id="project-${project.id}">
+      <img src="${project.image}" alt="${project.imageAlt}" />
       <div class="details">
-        <h2>${title}</h2>
+        <h2>${project.title}</h2>
         <ul class="subTitle">
-          ${details.map((d) => `<li>${d}</li>`).join('')}
+          ${project.details.map((d) => `<li>${d}</li>`).join('')}
         </ul>
-        <p>${description}</p>
+        <p>${project.description}</p>
         <ul class="langauges">
-        ${langs.map((l) => `<li>${l}</li>`).join('')}
+        ${project.langs.map((l) => `<li>${l}</li>`).join('')}
         </ul>
         <button>See Project</button>
       </div>

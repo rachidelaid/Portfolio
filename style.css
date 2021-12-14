@@ -384,7 +384,7 @@ button:disabled {
   width: fit-content;
 }
 
-.btn img {
+.btn .icon {
   width: 20px;
   margin-left: 14px;
 }
@@ -561,6 +561,7 @@ textarea::placeholder {
   .hero > div {
     width: 600px;
   }
+
   .modal-content {
     grid-template-columns: 2fr 1fr;
     gap: 24px;
