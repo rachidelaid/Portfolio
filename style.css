@@ -210,7 +210,7 @@ h1 {
   height: 100vh;
   width: 100vw;
   background: #c1c7d0d7;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 999;
@@ -218,12 +218,14 @@ h1 {
 
 .modal {
   width: 90%;
+  max-height: 90%;
   background: #fff;
   border-radius: 16px;
   padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: auto;
 }
 
 .modal-title {
@@ -247,13 +249,13 @@ h1 {
 
 .modal > img {
   width: 100%;
-  transition: width 0.25s ease;
 }
 
 .modal-content {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0;
+  width: 100%;
 }
 
 .modal-content > div {
@@ -524,13 +526,6 @@ textarea::placeholder {
   border-color: #2230d2;
 }
 
-@media (min-width: 800px) and (max-width: 992px) {
-  .modal > img {
-    width: 80%;
-    margin-right: 0 auto;
-  }
-}
-
 @media (min-width: 992px) {
   header {
     padding: 24px 155px;
@@ -566,12 +561,6 @@ textarea::placeholder {
   .hero > div {
     width: 600px;
   }
-
-  .modal > img {
-    width: 65%;
-    margin-right: 0 auto;
-  }
-
   .modal-content {
     grid-template-columns: 2fr 1fr;
     gap: 24px;
