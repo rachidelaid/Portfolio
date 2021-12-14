@@ -384,7 +384,7 @@ button:disabled {
   width: fit-content;
 }
 
-.btn .icon {
+.btn .btn-icon {
   width: 20px;
   margin-left: 14px;
 }
