@@ -87,7 +87,7 @@ for (let i = 0; i < projects.length; i += 1) {
         </ul>
         <p>${project.description}</p>
         <ul class="langauges">
-        ${project.langs.map((l) => `<li>${l}</li>`).join('')}
+          ${project.langs.map((l) => `<li>${l}</li>`).join('')}
         </ul>
         <button>See Project</button>
       </div>
@@ -95,6 +95,7 @@ for (let i = 0; i < projects.length; i += 1) {
   `;
 }
 
+//Popup
 const modal = document.querySelector('.modal-wrapper');
 const close = document.querySelector('.close-modal');
 const titleElm = document.querySelector('.modal-title h2');
