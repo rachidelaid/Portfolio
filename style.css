@@ -526,6 +526,12 @@ textarea::placeholder {
   border-color: #2230d2;
 }
 
+.contact-form small {
+  text-align: left;
+  color: rgb(255, 0, 0);
+  width: 100%;
+}
+
 @media (min-width: 992px) {
   header {
     padding: 24px 155px;
