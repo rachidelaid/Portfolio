@@ -1,5 +1,5 @@
 const form = document.querySelector('#contact form');
-const { email, name, message } = form.elements;
+const { email } = form.elements;
 
 function showMsg(input, msg) {
   const small = document.createElement('small');
