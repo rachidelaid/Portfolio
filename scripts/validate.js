@@ -1,5 +1,5 @@
 const form = document.querySelector('#contact form');
-const email = form.elements.email;
+const { email } = form.elements;
 
 function showMsg(input, msg) {
   const small = document.createElement('small');
@@ -23,4 +23,5 @@ form.addEventListener('submit', (e) => {
   }
 
   form.submit();
+  return true;
 });
