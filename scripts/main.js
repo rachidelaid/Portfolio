@@ -95,7 +95,7 @@ for (let i = 0; i < projects.length; i += 1) {
   `;
 }
 
-//Popup
+// Popup Logic
 const modal = document.querySelector('.modal-wrapper');
 const close = document.querySelector('.close-modal');
 const titleElm = document.querySelector('.modal-title h2');
