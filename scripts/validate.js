@@ -4,25 +4,25 @@ const email = form.elements['email'];
 const message = form.elements['message'];
 
 function showMsg(input, msg) {
-	const small = document.createElement('small');
-	small.classList.add('error');
-	small.textContent = msg;
-	form.insertBefore(small, input);
+  const small = document.createElement('small');
+  small.classList.add('error');
+  small.textContent = msg;
+  form.insertBefore(small, input);
 }
 
 function resetMsg() {
-	document.querySelectorAll('small').forEach((s) => s.remove());
+  document.querySelectorAll('small').forEach((s) => s.remove());
 }
 
 form.addEventListener('submit', (e) => {
-	e.preventDefault();
+  e.preventDefault();
 
-	resetMsg();
+  resetMsg();
 
-	if (email.value !== email.value.toLowerCase()) {
-		showMsg(email, 'Please enter a valid email');
-		return false;
-	}
+  if (email.value !== email.value.toLowerCase()) {
+    showMsg(email, 'The email should be lowercase');
+    return false;
+  }
 
-	form.submit();
+  form.submit();
 });
