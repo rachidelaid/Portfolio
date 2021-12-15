@@ -1,5 +1,5 @@
 const contactForm = document.querySelector('#contact form');
-const { fullName, message } = form.elements;
+const { fullName, message, email } = contactForm.elements;
 
 // storing the form data in local storage
 contactForm.addEventListener('change', () => {
@@ -25,6 +25,6 @@ contactForm.addEventListener('change', () => {
 const formObj = JSON.parse(localStorage.getItem('formData'));
 const { userName, userEmail, userMessage } = formObj;
 
-fullName.value = userName ? userName : '';
-email.value = userEmail ? userEmail : '';
-message.value = userMessage ? userMessage : '';
+fullName.value = userName || '';
+email.value = userEmail || '';
+message.value = userMessage || '';
