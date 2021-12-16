@@ -22,7 +22,7 @@ contactForm.addEventListener('change', () => {
 
 // set the localStorage data to the form
 
-const formObj = JSON.parse(localStorage.getItem('formData'));
+const formObj = JSON.parse(localStorage.getItem('formObj'));
 const { userName, userEmail, userMessage } = formObj;
 
 fullName.value = userName || '';
