@@ -26,51 +26,91 @@ const work = document.querySelector('#works');
 const projects = [
   {
     id: 1,
-    title: 'Tonic',
-    image: './assets/work-1.png',
-    imageAlt: 'First Project Image',
-    details: ['CANOPY', 'Back End Dev', '2015'],
+    title: 'Anime Higher Lower',
+    image: './assets/work-1.jpeg',
+    imageAlt: 'Anime Higher Lower Image',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+      'A game where you have to decide if the right anime is ranked lower or higher than the left one. guess wrong once and you have to start again',
+    langs: ['Svelte'],
+    gitLink: 'https://github.com/rachidelaid/AnimeHigherLower',
+    srcLink: 'https://anime-higher-lower.netlify.app/',
   },
   {
     id: 2,
-    title: 'Multi-Post Stories',
+    title: 'pokeDB',
     image: './assets/work-2.png',
-    imageAlt: 'Second Project Image',
-    details: ['CANOPY', 'Back End Dev', '2015'],
+    imageAlt: 'pokeDB Image',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+      'PokeDB includes the PokeAPI and Involvement API. You can like pokemons and comment on their page, check their type and base stats.',
+    langs: ['html', 'css', 'javaScript', 'webpack'],
+    gitLink: 'https://github.com/rachidelaid/pokeDB',
+    srcLink: 'https://pokedb.netlify.app/',
   },
   {
     id: 3,
-    title: 'Tonic',
+    title: 'Pomodoro Timer',
     image: './assets/work-3.png',
-    imageAlt: 'Third Project Image',
-    details: ['CANOPY', 'Back End Dev', '2015'],
+    imageAlt: 'Pomodoro Timer Image',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A classic pomodoro timer, with extra functionality like changing the accent color and fonts.',
     langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+    gitLink: 'https://github.com/rachidelaid/pomodoro-vanilla',
+    srcLink: 'https://rachidelaid.github.io/pomodoro-vanilla',
   },
   {
     id: 4,
-    title: 'Multi-Post Stories',
+    title: 'React Todo App',
     image: './assets/work-4.png',
-    imageAlt: 'Fourth Project Image',
-    details: ['CANOPY', 'Back End Dev', '2015'],
+    imageAlt: 'React Todo App Image',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    langs: ['html', 'css', 'javaScript'],
-    gitLink: '#',
-    srcLink: '#',
+      'This is classic todo app built with ReactJS with a few twists! This app includes a dark/light theme toggle and drag & drop reordering',
+    langs: ['ReactJS'],
+    gitLink: 'https://github.com/rachidelaid/react-todolist',
+    srcLink: 'https://todolist-react-app.herokuapp.com/',
+  },
+  {
+    id: 5,
+    title: 'Book Store',
+    image: './assets/work-5.png',
+    imageAlt: 'Book Store Image',
+    description:
+      'This is a website to Display a list of books using an API, you can also add new book and removing it.',
+    langs: ['ReactJS', 'Redux'],
+    gitLink: 'https://github.com/rachidelaid/Bookstore-reactjs',
+    srcLink: 'https://reactjs-book-store-cms.netlify.app/',
+  },
+  {
+    id: 6,
+    title: 'Human Benchmark',
+    image: './assets/work-6.png',
+    imageAlt: 'Human Benchmark Image',
+    description:
+      'this is a clone of human benchmark website, built using reactJS. check the live link below if you wanna try it out.',
+    langs: ['ReactJS'],
+    gitLink: 'https://github.com/rachidelaid/human-benchmark',
+    srcLink: 'https://human-benchmark.netlify.app/',
+  },
+  {
+    id: 7,
+    title: 'Wordle',
+    image: './assets/work-7.png',
+    imageAlt: 'Wordle Image',
+    description:
+      'a clone of the wordle game build using vuejs 3. with extra functionality like changing the theme',
+    langs: ['VueJS'],
+    gitLink: 'https://github.com/rachidelaid/WORDLE-VueJS',
+    srcLink: 'https://vuejs-wordle.netlify.app/',
+  },
+  {
+    id: 8,
+    title: 'Svelte Quiz App',
+    image: './assets/work-8.png',
+    imageAlt: 'Svelte Quiz App Image',
+    description:
+      'this is a todo list on the Kanban style. built using svelte and svelte-dnd-actions. you can create list and tasks, edit at any time and drag them around.',
+    langs: ['svelte'],
+    gitLink: 'https://github.com/rachidelaid/WORDLE-VueJS',
+    srcLink: 'https://trello-svelte-clone.netlify.app/',
   },
 ];
 
@@ -82,9 +122,6 @@ for (let i = 0; i < projects.length; i += 1) {
       <img src="${project.image}" alt="${project.imageAlt}" />
       <div class="details">
         <h2>${project.title}</h2>
-        <ul class="subTitle">
-          ${project.details.map((d) => `<li>${d}</li>`).join('')}
-        </ul>
         <p>${project.description}</p>
         <ul class="langauges">
           ${project.langs.map((l) => `<li>${l}</li>`).join('')}
@@ -99,7 +136,6 @@ for (let i = 0; i < projects.length; i += 1) {
 const modal = document.querySelector('.modal-wrapper');
 const close = document.querySelector('.close-modal');
 const titleElm = document.querySelector('.modal-title h2');
-const subTitle = document.querySelector('.modal .subTitle');
 const img = document.querySelector('.modal img');
 const paragraph = document.querySelector('.modal p');
 const languages = document.querySelector('.modal-content .langauges');
@@ -121,7 +157,6 @@ document.querySelectorAll('.work-card button').forEach((btn) => {
     } = projects.find((p) => p.id === id);
 
     titleElm.innerText = title;
-    subTitle.innerHTML = details.map((d) => `<li>${d}</li>`).join('');
     img.setAttribute('src', image);
     img.setAttribute('alt', imageAlt);
     paragraph.innerText = description;
