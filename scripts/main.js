@@ -112,6 +112,16 @@ const projects = [
     gitLink: 'https://github.com/rachidelaid/WORDLE-VueJS',
     srcLink: 'https://trello-svelte-clone.netlify.app/',
   },
+  {
+    id: 9,
+    title: 'Rails Recipe App ',
+    image: './assets/work-9.png',
+    imageAlt: 'Rails Recipe App Image',
+    description:'The recipe is created with ruby on rails and allows logged in users to create recipes from food items they have available. It also allows them to view public recipes shared by other users.',
+    langs: ['ruby on rails', 'bootstrap'],
+    gitLink: 'https://github.com/rachidelaid/rails-recipe-app',
+    srcLink: 'https://github.com/rachidelaid/rails-recipe-app',
+  },
 ];
 
 for (let i = 0; i < projects.length; i += 1) {
